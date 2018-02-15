@@ -1,0 +1,31 @@
+{
+  "name": "c",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build",
+    "build": "webpack-dev-server --content-base src/app/ --inline --hot",
+    "build-prod": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Roja",
+  "license": "ISC",
+  "dependencies": {
+    "d3-scale": "2.0.0",
+    "d3-selection": "^1.3.0",
+    "d3-transition": "^1.1.1",
+    "react": "^16.2.0",
+    "react-d3": "^0.4.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.1"
+  }
+}
