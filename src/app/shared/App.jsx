@@ -1,5 +1,6 @@
 import React  from 'react';
 import BarChart from './barchart.jsx';
+import TabViewElement from './TabViewElement.jsx'
 import AppBar from 'material-ui/AppBar';
 import Divider from 'material-ui/Divider';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
@@ -74,7 +75,7 @@ class App extends React.Component {
           onChangeIndex={this.handleChange}
         >
           <div>
-        <h2>main String </h2>
+          <TabViewElement/>
 
          <BarChart data={[5,10,1,3,15,16,12,12,12,23,44]} size={[500,500]} />
           </div>
