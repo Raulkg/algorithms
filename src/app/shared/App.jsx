@@ -12,6 +12,7 @@ import Tabs, { Tab } from 'material-ui/Tabs';
 import SwipeableViews from 'react-swipeable-views';
 import PropTypes from 'prop-types';
 
+import Card, { CardActions, CardContent } from 'material-ui/Card';
 
 const styles = {
   headline: {
@@ -64,17 +65,18 @@ class App extends React.Component {
           onChange={this.handleChange}
           value={this.state.slideIndex}
         >
-          <Tab label="Tab One" value={0} />
-          <Tab label="Tab Two" value={1} />
-          <Tab label="Tab Three" value={2} />
+          <Tab label="Boyre Moore" value={0} />
+          <Tab label="Knuth Morris Pratt" value={1} />
+          <Tab label="Rabin Karp" value={2} />
         </Tabs>
         <SwipeableViews
           index={this.state.slideIndex}
           onChangeIndex={this.handleChange}
         >
           <div>
-            <h2 style={styles.headline}>Tabs with slide effect</h2>
-            Swipe to see the next slide.<br />
+        <h2>main String </h2>
+
+         <BarChart data={[5,10,1,3,15,16,12,12,12,23,44]} size={[500,500]} />
           </div>
           <div style={styles.slide}>
             slide n°2
